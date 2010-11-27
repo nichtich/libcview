@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>LibTreeView - Visualize Library Classfication Trees</title>
+
+<!-- CSS Files -->
+<link type="text/css" href="css/base.css" rel="stylesheet" />
+<link type="text/css" href="css/libcview.css" rel="stylesheet" />
+
+<!--[if IE]><script language="javascript" type="text/javascript" src="jit/excanvas.js"></script><![endif]-->
+
+<!-- JIT Library File -->
+<script language="javascript" type="text/javascript" src="jit/jit-yc.js"></script>
+
+<!-- LibCView File -->
+<script language="javascript" type="text/javascript" src="libcview.js"></script>
+
+<!-- get the data -->
+<script language="javascript" type="text/javascript" src="tree.js"></script>
+</head>
+
+<body onload="init();">
+<div id="container">
+
+<div id="left-container">
+        <div class="text">
+        <h4>Library Classification Overview</h4>
+
+            Use <b>Left click</b> and <b>Right click</b> for navigation.
+
+           <br><br>
+ 
+            You can <b>choose a different visualizations</b> below:
+        </div>
+
+        <div id="id-list">
+<table>
+    <tr>
+        <td>
+            <label for="r-sq">Squarified </label>
+        </td>
+        <td>
+            <input type="radio" id="r-sq" name="layout" checked="checked" value="left" />
+        </td>
+    </tr>
+    <tr>
+         <td>
+            <label for="r-st">Strip </label>
+         </td>
+         <td>
+            <input type="radio" id="r-st" name="layout" value="top" />
+         </td>
+    </tr>
+    <tr>
+         <td>
+            <label for="r-sd">SliceAndDice </label>
+          </td>
+          <td>
+            <input type="radio" id="r-sd" name="layout" value="bottom" />
+          </td>
+    </tr>
+    <tr>
+         <td>
+            <label for="r-sb">Sunbirst </label>
+          </td>
+          <td>
+            <input type="radio" id="r-sb" name="layout" value="bottom" />
+          </td>
+    </tr>
+</table>
+</div>
+
+        <div style="text-align:center;">
+          <small>created with <a href="http://thejit.org/">jit</a></small>
+        </div>
+</div>
+
+<div id="center-container">
+    <div class="infovis" id="infovisTreemap" style="display:block;"></div>    
+    <div class="infovis" id="infovisSunbirst" style="display:none;"></div>    
+</div>
+
+<div id="right-container">
+
+<div id="inner-details"></div>
+
+</div>
+
+<div id="log"></div>
+</div>
+</body>
+</html>

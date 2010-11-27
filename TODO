@@ -1,0 +1,24 @@
+
+See http://thejit.org/static/v20/Jit/Examples/Treemap/example2.html for an
+example with on-demand nodes. We should only show up to three levels.
+
+The Sunbirst view should be sorted by notation and on highlighting 
+better show rays of subclasses.
+
+Add Icicle Tree:
+- http://thejit.org/static/v20/Jit/Examples/Icicle/example1.html
+- http://thejit.org/static/v20/Jit/Examples/Icicle/example2.html
+
+Add SpaceTree
+- http://thejit.org/static/v20/Jit/Examples/Spacetree/example1.html
+- http://thejit.org/static/v20/Jit/Examples/Spacetree/example2.html
+
+This can also include removing of subtrees 
+(for hiding parts of the classification)
+- http://thejit.org/static/v20/Jit/Examples/Spacetree/example3.html
+
+We could implement a SpaceTree with nodes as pie diagrams, as shown in
+- http://thejit.org/static/v20/Jit/Examples/Other/example3.html
+For instance this could show the percentage of books on hold etc.
+
+RGraph and HyperTree may also be of interest later.
